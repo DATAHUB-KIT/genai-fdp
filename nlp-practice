@@ -80,3 +80,25 @@ classifier = pipeline("zero-shot-classification")
 text = "Trump declares Trade war with high  tariifs"
 candidate_labels = ["tech", "education", "business"]
 classifier(text, candidate_labels)
+=====================================================================
+
+from transformers import AutoTokenizer, AutoModelForTokenClassification, pipeline
+
+model_name = "dslim/bert-base-NER"
+
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForTokenClassification.from_pretrained(model_name)
+
+# Updated parameter
+ner = pipeline(
+    "ner",
+    model=model,
+    tokenizer=tokenizer,
+    aggregation_strategy="simple"
+)
+
+sentence = "My name is Tirendaz and I work at Google Cloud in Berlin"
+
+output = ner(sentence)
+
+print(output)
