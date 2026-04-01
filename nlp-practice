@@ -1,0 +1,7 @@
+import nltk # Download the 'stopwords' dataset
+nltk.download('stopwords')
+from nltk.corpus import stopwords
+stop_words = set(stopwords.words('english'))
+tokens = ["this", "is", "a", "sample", "sentence"]
+filtered_tokens = [word for word in tokens if word.lower() not in stop_words]
+print(filtered_tokens)
