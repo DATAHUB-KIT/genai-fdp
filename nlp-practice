@@ -57,4 +57,9 @@ text = "I love Python! �"
 text = emoji.demojize(text)
 text = emoji.replace_emoji(text, replace="") 
 print(text)
-
+=================================================================
+!pip install contractions
+import contractions
+text = "I'll be there ASAP."
+expanded_text = contractions.fix(text)
+print(expanded_text)
