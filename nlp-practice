@@ -73,3 +73,10 @@ model_name = "nlptown/bert-base-multilingual-uncased-sentiment"
 		classifier("good restaurant")
 
 
+===================================================================================
+
+from transformers import pipeline
+classifier = pipeline("zero-shot-classification")
+text = "Trump declares Trade war with high  tariifs"
+candidate_labels = ["tech", "education", "business"]
+classifier(text, candidate_labels)
