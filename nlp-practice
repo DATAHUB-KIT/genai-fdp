@@ -49,4 +49,12 @@ tokens = word_tokenize("John works at Google in New York.")
 pos_tags = pos_tag(tokens) 
 ner_tags = ne_chunk(pos_tags)
 print(ner_tags)
+================================================================================
+
+import emoji 
+text = "I love Python! �" 
+# Convert emojis to text 
+text = emoji.demojize(text)
+text = emoji.replace_emoji(text, replace="") 
+print(text)
 
