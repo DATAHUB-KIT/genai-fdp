@@ -5,3 +5,15 @@ stop_words = set(stopwords.words('english'))
 tokens = ["this", "is", "a", "sample", "sentence"]
 filtered_tokens = [word for word in tokens if word.lower() not in stop_words]
 print(filtered_tokens)
+======================================================
+import string 
+text = "ANR college is established in 1950 !! in A.P"
+text = text.lower() 
+text = text.translate(str.maketrans('', '', string.punctuation)) 
+from nltk.tokenize import word_tokenize
+tokens = word_tokenize(text)
+from nltk.corpus import stopwords
+stop_words = set(stopwords.words('english'))
+filtered_tokens = [word for word in tokens if word.lower() not in stop_words]
+print(filtered_tokens)
+
