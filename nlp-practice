@@ -31,3 +31,8 @@ lemmatizer = WordNetLemmatizer()
 words = ["running", "runner", "ran"] 
 lemmatized_words = [lemmatizer.lemmatize(word, pos='v') for word in words] 
 print(lemmatized_words) 
+==============================================================
+import re 
+text = "This is a #sample text with @special characters!" 
+text = re.sub(r'[^\w\s]', '', text) 
+print(text) 
