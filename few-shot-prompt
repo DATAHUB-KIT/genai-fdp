@@ -1,0 +1,98 @@
+content creation
+=========================
+I am creating concept cards for students. Here are two examples:
+
+CARD 1:
+Term: Osmosis
+Definition: Movement of water molecules from a region of high concentration to low concentration through a semi-permeable membrane.
+Analogy: Like a crowded room — people (water) move to the less crowded side.
+Remember: "O for Out — water moves OUT of high concentration."
+
+CARD 2:
+Term: Mitosis
+Definition: Cell division producing two identical daughter cells with the same chromosome number as the parent.
+Analogy: Like photocopying — you get an exact duplicate.
+Remember: "Mitosis = Makes identical."
+
+Now create concept cards in the same format for: Meiosis, Diffusion, Active Transport.
+
+==========================
+slide preparation
+
+MODULE 1 — Database Management:
+By the end of this module, students will be able to:
+1. Design a normalized relational database schema
+2. Write complex SQL queries using joins and subqueries
+3. Evaluate trade-offs between indexing strategies
+
+MODULE 2 — Computer Networks:
+By the end of this module, students will be able to:
+1. Explain the OSI model and the role of each layer
+2. Configure basic IP addressing and subnetting
+3. Analyze network performance using protocol analysis tools
+
+Now write learning objectives in the same style (Bloom's Taxonomy verbs, 3 objectives) for:
+Module 3 — Operating Systems
+Module 4 — Software Engineering
+
+============================================
+Feedback — rubric-based
+
+
+I grade assignments using this rubric: Content (40%), Structure (30%), Referencing (20%), Language (10%).
+
+Here is how I wrote feedback for two students:
+
+STUDENT A (Score: 78/100):
+Content (32/40): Strong understanding of core concepts, minor gaps in application.
+Structure (24/30): Logical flow, but introduction is too brief.
+Referencing (16/20): Good use of sources; two citations missing page numbers.
+Language (6/10): Mostly clear; some run-on sentences.
+Overall: A well-researched paper. Improve your introduction and citation formatting.
+
+STUDENT B (Score: 55/100):
+Content (20/40): Key concepts mentioned but not adequately explained.
+Structure (16/30): Sections are disjointed; lacks clear transitions.
+Referencing (12/20): Only 4 sources used; minimum is 8.
+Language (7/10): Writing is clear and grammatically correct.
+Overall: Revisit the core concepts and expand your research base before resubmission.
+
+Now use the same rubric and feedback style for a student who scored 65/100 with the following notes: [Paste your notes here]
+
+
+==================================================
+
+quality teaching
+Here are two mini case studies I use for classroom discussion:
+
+CASE 1 — Business Ethics:
+Scenario: A pharmaceutical company discovers a side effect of a drug two years after launch. The fix is expensive and would reduce profits.
+Discussion questions:
+1. What are the company's ethical obligations?
+2. How should regulators respond?
+3. What does stakeholder theory say about this situation?
+
+CASE 2 — Supply Chain Management:
+Scenario: A global retailer faces a shortage of raw materials due to a geopolitical conflict affecting supplier countries.
+Discussion questions:
+1. What short-term and long-term strategies can the retailer use?
+2. How does this illustrate supply chain risk?
+3. What role does diversification play?
+
+Now create a similar case study for the topic: Data Privacy and AI in Education.
+
+
+=================================
+chain of thought
+
+I need to explain "Gradient Descent" to B.Tech 3rd year students. Before writing the explanation, think through the following steps:
+
+Step 1: What is the core idea of gradient descent in simple terms?
+Step 2: What prior knowledge do 3rd year students already have (calculus, Python)?
+Step 3: What is a relatable real-world analogy for this concept?
+Step 4: What common misconceptions do students have about it?
+Step 5: How should the explanation be sequenced for maximum clarity?
+
+After completing all five steps, write the final student-facing explanation based on your reasoning.
+
+
