@@ -27,3 +27,19 @@ from transformers import pipeline
 ner = pipeline("ner", grouped_entities = True)
 sentence = "My name is Tirendaz and I work Google Cloud in Berlin"
 ner(sentence)
+=================================================
+from transformers import pipeline
+generator = pipeline("text-generation", model="gpt2")
+
+prompt = """
+Example:
+Input: "Translate 'Bonjour' to English"
+Output: "Hello"
+
+Now:
+Input: "Translate 'Merci' to English"
+Output:
+"""
+
+result = generator(prompt, max_length=50, num_return_sequences=1)
+print(result[0]['generated_text'])
