@@ -6,6 +6,7 @@ text = "Hello World! This is NLP."
 tokens = word_tokenize(text)
 print(tokens)
 ===============================================
+!pip install transformers
 model_name = "nlptown/bert-base-multilingual-uncased-sentiment"
 from transformers import AutoTokenizer,AutoModelForSequenceClassification
 
