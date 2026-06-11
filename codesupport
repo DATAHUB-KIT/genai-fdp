@@ -17,3 +17,9 @@ classifier = pipeline("sentiment-analysis",
 #classifier("మంచి రెస్టారెంట్")
 classifier("अच्छे रेस्तरां")
 ================================================================================
+from transformers import pipeline
+classifier = pipeline("zero-shot-classification")
+text = "Trump declares Trade war with high  tariifs"
+candidate_labels = ["tech", "education", "business"]
+classifier(text, candidate_labels)
+==========================================================
