@@ -105,9 +105,9 @@ CONTEXT:
 Markdown(model.generate_content(prompt).text)
 ======================================================
 from transformers import pipeline
-
+!pip install transformers
 # Step 1: Load Hugging Face model for fallback (optional)
-generator = pipeline("text2text-generation", model="google/flan-t5-small")
+generator = pipeline("textgeneration", model="google/flan-t5-small")
 
 # Step 2: Predefined Q&A dictionary
 faq_dict = {
