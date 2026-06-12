@@ -104,3 +104,50 @@ CONTEXT:
 ===================================================================
 Markdown(model.generate_content(prompt).text)
 ======================================================
+from transformers import pipeline
+
+# Step 1: Load Hugging Face model for fallback (optional)
+generator = pipeline("text2text-generation", model="google/flan-t5-small")
+
+# Step 2: Predefined Q&A dictionary
+faq_dict = {
+    "what are the admission requirements for btech":
+        "You need to complete 12th grade with PCM and qualify in an entrance exam like JEE.",
+
+    "when is the last date to apply for mba":
+        "The last date to apply for MBA is August 31st, 2025.",
+
+    "what is the fee structure for computer science":
+        "The annual fee for Computer Science is ₹1,50,000 including tuition and lab charges.",
+
+    "is hostel facility available":
+        "Yes, hostel facility is available for both boys and girls.",
+
+    "how can i apply for scholarship":
+        "You can apply for scholarships through the college portal after admission is confirmed.",
+
+    "what is the contact number of admission office":
+        "You can reach the admission office at +91-9876543210."
+}
+
+# Step 3: Chat loop
+print("Welcome to the Student Admission Bot!")
+print(" Type your question or 'exit' to quit.\n")
+
+while True:
+    user_input = input("You: ").strip().lower()
+
+    if user_input == "exit":
+        print("Bot: Thank you! Have a great day!")
+        break
+
+    # Check in dictionary
+    response = faq_dict.get(user_input)
+
+    if response:
+        print(f" Bot: {response}")
+    else:
+        # Use Hugging Face model for fallback response
+        generated = generator(user_input, max_length=60)[0]['generated_text']
+        print(f" Bot (AI response): {generated}")
+
