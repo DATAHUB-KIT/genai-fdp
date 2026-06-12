@@ -83,3 +83,10 @@ François Lafortune, Jr, 7
 model = genai.GenerativeModel(model_name='gemini-2.5-flash')
 Markdown(model.generate_content(prompt).text)
 ========================================================================
+prompt = """
+extract capital cities from the text:
+During the summer I visited many countries in Europe.
+First I visited Italy, specifically Sicily and Rome.
+Then I visited Cologne in Germany and the trip ended in Berlin """
+Markdown(model.generate_content(prompt).text)
+========================================================================
