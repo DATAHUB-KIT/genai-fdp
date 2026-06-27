@@ -68,3 +68,7 @@ images=pipe(prompt=prompt,
             num_inference_steps=100,
             guidance_scale=9).images[0]
 images
+###################################################################
+!pip install transformers pillow pytesseract
+!apt-get install tesseract-ocr -
+###################################################
