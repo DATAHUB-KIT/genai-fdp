@@ -54,3 +54,5 @@ CONTEXT:
 {context}
 """
 ###################################################################
+model = genai.GenerativeModel(model_name='gemini-2.5-flash')
+Markdown(model.generate_content(prompt).text)
