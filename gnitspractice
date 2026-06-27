@@ -44,3 +44,13 @@ context = ""
 context += '\n'.join([f"{row['name']},{row['attendance']}" for _, row in df.iterrows()])
 print(context)
 #####################################################################################
+
+
+prompt = f"""
+QUERY: Identify the student with the lowest attendance.
+
+CONTEXT:
+
+{context}
+"""
+###################################################################
